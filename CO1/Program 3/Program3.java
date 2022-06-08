@@ -1,23 +1,30 @@
 //  Add complex numbers
 
-class ComplexNumber{
-    int real;
-    int image;
-
-    void addition(ComplexNumber num1,ComplexNumber num2){
-        System.out.println("Addition of complex number:"+(num1.real+num2.real)+"+"+(num1.image+num2.image)+"i");
-    }
-    void SetValues(int real,int image){
-        this.real=real;
-        this.image=image;
-    }
+import java.util.*;
+class Complex
+{
+	int r1,r2,r3,i1,i2,i3;
+	
+	void get()
+	{
+		Scanner n=new Scanner(System.in);
+		System.out.println("Enter real value and image value of first complex number");
+		r1=n.nextInt();
+		i1=n.nextInt();
+		System.out.println("Enter real value and image value of second complex number");
+		r2=n.nextInt();
+		i2=n.nextInt();
+		r3=r1+r2;
+		i3=i1+i2;
+		System.out.println(r3+"+i"+i3);
+	}
 }
-public class Program3 {
-    public static void main(String[] args) {
-        ComplexNumber num1=new ComplexNumber();
-        ComplexNumber num2=new ComplexNumber();
-        num1.SetValues(3,4);
-        num2.SetValues(5,2);
-        num2.addition(num1,num2);  
-    }
+class Program3
+{
+	public static void main(String a[])
+	{
+		Complex c=new Complex();
+		c.get();
+	}
 }
+	
