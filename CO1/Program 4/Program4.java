@@ -2,7 +2,8 @@
 
 import java.util.Scanner;
 
-class Matrix{
+class Matrix
+{
     int row;
     int column;
 }
