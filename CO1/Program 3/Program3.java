@@ -3,6 +3,7 @@
 import java.util.*;
 class Complex
 {
+	
 	int r1,r2,r3,i1,i2,i3;
 	
 	void get()
