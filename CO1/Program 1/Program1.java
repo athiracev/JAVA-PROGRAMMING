@@ -1,40 +1,44 @@
 /* Define a class ‘product’ with data members pcode, pname and price. 
 Create 3 objects of the class and find the product having the lowest price.*/
 
-class Product{
-    String pcode;
-    String pname;
-    double price;
+import java.io.*;
 
-    String lowestPrice(Product p1, Product p2, Product p3)
-    {
-        if(p1.price<p2.price && p1.price<p3.price){
-            return p1.pname;
-        }
-        else if(p2.price<p1.price && p2.price<p3.price){
-            return p2.pname;
-        }
-        else{
-            return p3.pname;
-        }
-    }
-    void SetValues(String pcode,String pname,double price){
-            this.pcode=pcode;
-            this.pname=pname;
-            this.price=price;
-    }
+class Product{
+int pcode;
+int price;
+String pname;
 }
-public class Program1 {
-    public static void main(String[] args) {
-        Product p1=new Product();
-        Product p2=new Product();
-        Product p3=new Product();
-        p1.SetValues("p11", "Redmi", 20000);
-        p2.SetValues("p12", "Iphone", 50000);
-        p3.SetValues("p13", "Samsung", 25000);
-        String lowest;
-        lowest=p1.lowestPrice(p2,p3,p1);
-        System.out.println(lowest+" has lowest price");
-        
-    }
+
+class Program1{
+	public static void main(String a[])
+	{
+		Product k = new Product();
+		Product j = new Product();
+		Product l = new Product();
+		k.pcode = 111;
+		k.price = 55;
+		k.pname = "Book";
+		j.pcode = 222;
+		j.price = 5;
+		j.pname = "pen";
+		l.pcode = 333;
+		l.price = 150;
+		l.pname = "Box";
+		System.out.println("Name = "+k.pname+" Code = "+k.pcode+" price ="+k.price);
+		System.out.println("Name = "+l.pname+" Code = "+l.pcode+" price ="+l.price);
+		System.out.println("Name = "+j.pname+" Code = "+j.pcode+" price ="+j.price);
+		System.out.println("Lowest Price");
+		if(k.price < l.price && k.price < j.price)
+		{
+			System.out.println("Name = "+k.pname+" Code = "+k.pcode+" price ="+k.price);
+		}
+		else if(l.price < j.price)
+		{
+			System.out.println("Name = "+l.pname+" Code = "+l.pcode+" price ="+l.price);
+		}
+		else
+		{
+			System.out.println("Name = "+j.pname+" Code = "+j.pcode+" price ="+j.price);
+		}
+	}
 }
