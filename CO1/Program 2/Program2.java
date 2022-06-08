@@ -4,14 +4,11 @@ import java.util.Scanner;
 import java.io.*;
 class Matrix
 {
-	
-		
 		int r1,c1,r2,c2,i,j;
 		int m1[][] = new int[10][10];
 		int m2[][] = new int[10][10];
 		int s=0;
-			
-			
+					
 	void getData()
 	{
 		Scanner k =new Scanner(System.in);
