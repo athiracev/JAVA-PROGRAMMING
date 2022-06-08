@@ -3,10 +3,11 @@ Create 3 objects of the class and find the product having the lowest price.*/
 
 import java.io.*;
 
-class Product{
-int pcode;
-int price;
-String pname;
+class Product
+{
+	int pcode;
+	int price;
+	String pname;
 }
 
 class Program1{
